@@ -1,4 +1,4 @@
-heading = []
+heading = [] #список заголовок
 username = input('Введите ваше имя: ') # имя пользователя
 title1 = heading.append(input('Введите заголовок заметки №1 : ')) # заголовок заметки
 title2 = heading.append(input('Введите заголовок заметки №2 : '))
