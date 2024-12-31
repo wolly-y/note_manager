@@ -1,9 +1,9 @@
-username = 'Mark' # имя пользователя
-title = 'first title' # заголовок заметки
-content = 'first content' # описание заметки
-status = 'active' # статус заметки
-created_date = '25-12-2024' # дата создания заметки
-issue_date = '25-01-2025' # дата истечения заметки
+username = 'Mark'
+title = 'first title'
+content = 'first content'
+status = 'active'
+created_date = '25-12-2024'
+issue_date = '25-01-2025'
 
 print('Имя пользователя: ', username)
 print('Заголовок заметки: ', title)
