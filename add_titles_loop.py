@@ -1,5 +1,6 @@
 # Создается список для хранения заголовков
 heading = []
+heading_print = ''
 heading.append(input('Введите заголовок (Стоп или оставьте пустым для завершения): '))
 
 # Цикл продолжается, пока не введено "Стоп" или пустая строка
@@ -13,4 +14,8 @@ while heading[-1] != '' and heading[-1].lower() != 'стоп':
 # Удаляем последний элемент, если это пустая строка или "Стоп"
 if heading[-1].lower() == 'стоп' or heading[-1] == '':
     heading.pop()
+# Выводим список заголовков без скобок
+for item in heading:
+    heading_print = heading_print + item + '. '
+    
 print('Залоговки заметок: ', heading)
