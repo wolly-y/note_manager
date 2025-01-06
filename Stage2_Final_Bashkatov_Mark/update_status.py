@@ -4,6 +4,7 @@ status = {
     3: 'Отложено'
 }
 #  Используем цикл для вывода без скобок
+print('Выберите статус вашей заметки:')
 for key, value in status.items():
     print(f"{key}: {value}")
 
@@ -16,7 +17,7 @@ else:
 # Делаем "0" командой для завершения
 while status_now != 0:
     status_presently = status.get(status_now)
-    # Проверяем выбрал ли пользователь статус из предложенного 
+    # Проверяем выбрал ли пользователь статус из предложенного
     if status.get(status_now) != None:
         print('Статус заметки обновлен: ', status.get(status_now))
         status_now = int(input('Выберите новый статус заметки (0 для завершения):'))
