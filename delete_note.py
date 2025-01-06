@@ -9,11 +9,9 @@ notes = [
      'Заголовок': 'Футбол',
      'Описание': 'Завтра хотели поиграть'}
 ]
+# Выводим список
 print("Список заметок:")
-
-# Перебираем каждый словарь в списке
 for dict_item in notes:
-    # Перебираем каждый ключ и значение внутри словаря
     for key, value in dict_item.items():
         print(f"{key}: {value}")
     print()
@@ -27,7 +25,6 @@ while choice_.lower() == 'да':
         value_to_remove = value_to_remove.capitalize()
         # Создаем новый список, в который добавляем только те заметки, которые не содержат введённое значение
         updated_notes = [note for note in notes if value_to_remove not in note.values()]
-
         # Проверяем, изменился ли список
         if len(updated_notes) == len(notes):
             print('Заметка с таким значением не найдена.')
@@ -35,13 +32,11 @@ while choice_.lower() == 'да':
             print('Заметка удалена.')
     choice_ = input('Хотите удалить ещё одну заметку? (да/нет): ')
 
-# Обновляем оригинальный список заметок
+# Обновляем список заметок
 notes = updated_notes
 
 print("Обновленный список заметок:")
-# Перебираем каждый словарь в списке
 for dict_item in notes:
-    # Перебираем каждый ключ и значение внутри словаря
     for key, value in dict_item.items():
         print(f"{key}: {value}")
     print()
